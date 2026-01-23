@@ -1,0 +1,374 @@
+{
+  "N001": [
+    {
+      "to": "N020",
+      "distance": 63.7,
+      "accessible": true
+    }
+  ],
+  "N020": [
+    {
+      "to": "N001",
+      "distance": 63.7,
+      "accessible": true
+    },
+    {
+      "to": "N012",
+      "distance": 66.2,
+      "accessible": true
+    },
+    {
+      "to": "N002",
+      "distance": 53.1,
+      "accessible": true
+    },
+    {
+      "to": "N025",
+      "distance": 60.3,
+      "accessible": true
+    },
+    {
+      "to": "N061",
+      "distance": 108.9,
+      "accessible": true
+    }
+  ],
+  "N012": [
+    {
+      "to": "N020",
+      "distance": 66.2,
+      "accessible": true
+    },
+    {
+      "to": "N013",
+      "distance": 102.7,
+      "accessible": false
+    },
+    {
+      "to": "N019",
+      "distance": 125.3,
+      "accessible": true
+    }
+  ],
+  "N002": [
+    {
+      "to": "N020",
+      "distance": 53.1,
+      "accessible": true
+    }
+  ],
+  "N025": [
+    {
+      "to": "N020",
+      "distance": 60.3,
+      "accessible": true
+    },
+    {
+      "to": "N003",
+      "distance": 47.9,
+      "accessible": true
+    },
+    {
+      "to": "N021",
+      "distance": "82.40",
+      "accessible": true
+    }
+  ],
+  "N003": [
+    {
+      "to": "N025",
+      "distance": 47.9,
+      "accessible": true
+    }
+  ],
+  "N022": [
+    {
+      "to": "N015",
+      "distance": 90.4,
+      "accessible": true
+    },
+    {
+      "to": "N021",
+      "distance": 43.22,
+      "accessible": true
+    },
+    {
+      "to": "N007",
+      "distance": 33.23,
+      "accessible": true
+    },
+    {
+      "to": "N008",
+      "distance": 41.01,
+      "accessible": true
+    },
+    {
+      "to": "N015",
+      "distance": 63.12,
+      "accessible": true
+    },
+    {
+      "to": "N017",
+      "distance": 99.94,
+      "accessible": true
+    },
+    {
+      "to": "N016",
+      "distance": 58.4,
+      "accessible": true
+    }
+  ],
+  "N015": [
+    {
+      "to": "N022",
+      "distance": 90.4,
+      "accessible": true
+    },
+    {
+      "to": "N022",
+      "distance": 63.12,
+      "accessible": true
+    }
+  ],
+  "N013": [
+    {
+      "to": "N014",
+      "distance": 76.6,
+      "accessible": false
+    },
+    {
+      "to": "N012",
+      "distance": 102.7,
+      "accessible": false
+    },
+    {
+      "to": "N019",
+      "distance": 81.7,
+      "accessible": true
+    }
+  ],
+  "N014": [
+    {
+      "to": "N013",
+      "distance": 76.6,
+      "accessible": false
+    },
+    {
+      "to": "N021",
+      "distance": "29.10",
+      "accessible": true
+    }
+  ],
+  "N019": [
+    {
+      "to": "N012",
+      "distance": 125.3,
+      "accessible": true
+    },
+    {
+      "to": "N013",
+      "distance": 81.7,
+      "accessible": true
+    },
+    {
+      "to": "N016",
+      "distance": 111.21,
+      "accessible": true
+    }
+  ],
+  "N008": [
+    {
+      "to": "N010",
+      "distance": 41.01,
+      "accessible": true
+    },
+    {
+      "to": "N022",
+      "distance": 41.01,
+      "accessible": true
+    },
+    {
+      "to": "N024",
+      "distance": 73.7,
+      "accessible": true
+    },
+    {
+      "to": "N009",
+      "distance": 54.2,
+      "accessible": true
+    }
+  ],
+  "N010": [
+    {
+      "to": "N008",
+      "distance": 41.01,
+      "accessible": true
+    }
+  ],
+  "N016": [
+    {
+      "to": "N019",
+      "distance": 111.21,
+      "accessible": true
+    },
+    {
+      "to": "N022",
+      "distance": 58.4,
+      "accessible": true
+    }
+  ],
+  "N021": [
+    {
+      "to": "N025",
+      "distance": "82.40",
+      "accessible": true
+    },
+    {
+      "to": "N014",
+      "distance": "29.10",
+      "accessible": true
+    },
+    {
+      "to": "N006",
+      "distance": 31.01,
+      "accessible": true
+    },
+    {
+      "to": "N024",
+      "distance": 113.37,
+      "accessible": true
+    },
+    {
+      "to": "N022",
+      "distance": 43.22,
+      "accessible": true
+    }
+  ],
+  "N006": [
+    {
+      "to": "N021",
+      "distance": 31.01,
+      "accessible": true
+    }
+  ],
+  "N024": [
+    {
+      "to": "N021",
+      "distance": 113.37,
+      "accessible": true
+    },
+    {
+      "to": "N023",
+      "distance": 46.66,
+      "accessible": true
+    },
+    {
+      "to": "N005",
+      "distance": 30.87,
+      "accessible": true
+    },
+    {
+      "to": "N008",
+      "distance": 73.7,
+      "accessible": true
+    }
+  ],
+  "N007": [
+    {
+      "to": "N022",
+      "distance": 33.23,
+      "accessible": true
+    }
+  ],
+  "N023": [
+    {
+      "to": "N024",
+      "distance": 46.66,
+      "accessible": true
+    },
+    {
+      "to": "N061",
+      "distance": 87.4,
+      "accessible": true
+    },
+    {
+      "to": "N004",
+      "distance": 63.9,
+      "accessible": true
+    },
+    {
+      "to": "N011",
+      "distance": 196.4,
+      "accessible": true
+    }
+  ],
+  "N005": [
+    {
+      "to": "N024",
+      "distance": 30.87,
+      "accessible": true
+    }
+  ],
+  "N017": [
+    {
+      "to": "N022",
+      "distance": 99.94,
+      "accessible": true
+    },
+    {
+      "to": "N018",
+      "distance": "117.50",
+      "accessible": true
+    }
+  ],
+  "N018": [
+    {
+      "to": "N017",
+      "distance": "117.50",
+      "accessible": true
+    }
+  ],
+  "N061": [
+    {
+      "to": "N020",
+      "distance": 108.9,
+      "accessible": true
+    },
+    {
+      "to": "N023",
+      "distance": 87.4,
+      "accessible": true
+    },
+    {
+      "to": "N004",
+      "distance": 49.9,
+      "accessible": true
+    }
+  ],
+  "N004": [
+    {
+      "to": "N061",
+      "distance": 49.9,
+      "accessible": true
+    },
+    {
+      "to": "N023",
+      "distance": 63.9,
+      "accessible": true
+    }
+  ],
+  "N011": [
+    {
+      "to": "N023",
+      "distance": 196.4,
+      "accessible": true
+    }
+  ],
+  "N009": [
+    {
+      "to": "N008",
+      "distance": 54.2,
+      "accessible": true
+    }
+  ]
+}

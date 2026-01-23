@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Campus Path Finder</title>
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <style>
+    body { margin: 0; font-family: Arial; }
+    #controls {
+      padding: 10px;
+      background: #f4f4f4;
+    }
+    #map {
+      height: 90vh;
+    }
+  </style>
+</head>
+<body>
+
+<div id="controls">
+  Start:
+  <select id="start"></select>
+
+  End:
+  <select id="end"></select>
+
+  <label>
+    <input type="checkbox" id="accessible">
+    Accessible only
+  </label>
+
+  <button onclick="findPath()">Find Path</button>
+</div>
+
+<div id="map"></div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
