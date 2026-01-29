@@ -11,6 +11,19 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap'
 }).addTo(map);
 
+fetch("/data/nodes.json")
+  .then(res => res.json())
+  .then(nodes => {
+    nodes.forEach(node => {
+      if (node.type === "junction") return; // 🚫 hide visually
+
+      L.marker([node.lat, node.lng])
+        .bindPopup(node.name)
+        .addTo(map);
+    });
+  });
+
+
 // load geojson
 fetch('http://localhost:3000/geojson')
   .then(res => res.json())
@@ -24,8 +37,10 @@ fetch('http://localhost:3000/geojson')
 function loadGeoJSON(data) {
   L.geoJSON(data, {
     style: { color: '#555', weight: 2 },
+    filter: feature => feature.geometry.type !== "Point" || feature.properties.type !== "junction",
     onEachFeature: (feature, layer) => {
-  if (feature.geometry.type === 'Point') {
+      
+  if (feature.geometry.type === 'Point' && feature.properties.type !== 'junction') {
     const { node_id, name } = feature.properties;
     const [lon, lat] = feature.geometry.coordinates;
 
@@ -37,6 +52,28 @@ function loadGeoJSON(data) {
 
   }).addTo(map);
 }
+
+// function loadGeoJSON(data) {
+//   L.geoJSON(data, {
+//     filter: feature => {
+//       // draw paths always
+//       if (feature.geometry.type === "LineString") return true;
+
+//       // draw points except junctions
+//       if (
+//         feature.geometry.type === "Point" &&
+//         feature.properties.type !== "junction"
+//       ) {
+//         return true;
+//       }
+
+//       return false; // 🚫 hide junction points
+//     },
+
+//     pointToLayer: (feature, latlng) =>
+//       L.marker(latlng).bindPopup(feature.properties.name)
+//   }).addTo(map);
+// }
 
 // populate dropdowns using Point features
 function populateDropdowns(data) {
@@ -56,6 +93,9 @@ function populateDropdowns(data) {
     }
   });
 }
+
+
+
 
 // find shortest path
 function findPath() {

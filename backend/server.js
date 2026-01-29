@@ -6,6 +6,8 @@ const dijkstra = require('./dijkstra');
 const app = express();
 app.use(cors());
 
+
+
 app.get('/path', (req, res) => {
   const { start, end, accessible } = req.query;
 

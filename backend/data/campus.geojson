@@ -921,35 +921,9 @@
         "accessible": "true"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            78.5983751,
-            17.1967119,
-            0
-          ],
-          [
-            78.5981442,
-            17.1974953,
-            0
-          ]
-        ]
-      },
-      "properties": {
-        "name": "Path N022 to N015",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "stroke-opacity": 1,
-        "stroke": "#000000",
-        "stroke-width": 1.2,
-        "from": "N022",
-        "to": "N015",
-        "distance": 90.4,
-        "accessible": "true"
-      }
-    },
+  
+
+    
     {
       "type": "Feature",
       "geometry": {
